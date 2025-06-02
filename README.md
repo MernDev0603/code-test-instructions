@@ -37,3 +37,56 @@ It should:
   - How to build and run locally.
   - Example usage (UI and/or API).
   - Any notes or assumptions.
+
+## URL Shortener
+
+A simple URL Shortener application built with:
+
+- Backend: Java 17, Spring Boot, Maven, H2
+- Frontend: React.js (Create React App)
+- Dockerized with Docker Compose
+- Fully compatible with provided OpenAPI specification
+
+## Requirements
+
+- Java 17
+- Maven
+- Node.js (>= 16.x)
+- Docker (for full containerized run)
+
+## How To Run
+
+### Backend (Spring Boot)
+
+```bash
+cd backend
+mvn clean package
+java -jar target/urlshortener-0.0.1-SNAPSHOT.jar
+```
+
+Backend available at:
+http://localhost:8080
+
+### Frontend (React)
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+Frontend available at:
+http://localhost:3000
+
+### Full Dockerized Run
+
+```bash
+docker compose up --build
+```
+
+Frontend: http://localhost:3000
+Backend: http://localhost:8080
+
+## 📺 Demo
+
+![Demo](demo.gif)
